@@ -1,4 +1,5 @@
-
+import Link from "next/link";
+import { Row, Col } from 'antd';
 
 
 const StudyList = () => {
@@ -7,9 +8,14 @@ const StudyList = () => {
     ]
 
     return (
-        <div style={{width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '20px'}}>
-            {studyList.map(v => <div>{v.title}</div>)}
-        </div>
+        <Row>
+            <Col xs={24}>
+                <div style={{width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '40px'}}>
+                    {studyList.map(v => <Link href="/lecture"><a>{v.title}</a></Link>)}
+                </div>
+            </Col>
+
+        </Row>
     )
 }
 

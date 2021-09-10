@@ -3,6 +3,7 @@ import { Button } from 'antd'
 import styled from 'styled-components'
 import {useSelector, useDispatch} from 'react-redux'
 import {loadMyInfo} from '../actions/user'
+import { Row, Col } from 'antd';
 
 import AppLayout from '../components/AppLayout'
 import StudyList from '../components/StudyList'
@@ -19,11 +20,15 @@ export default function Home() {
     return (
         <>
             <AppLayout>
-                <div style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '45px',
-                fontFamily: "'Roboto Mono', monospace;", "marginTop": "40px"
-            }}>
-                    STUDY LIST
-                </div>
+                <Row>
+                    <Col xs={24}>
+                        <div style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '45px',
+                        fontFamily: "'Roboto Mono', monospace;", "marginTop": "40px"
+                    }}>
+                            STUDY LIST
+                        </div>
+                    </Col>
+                </Row>
                 <StudyList />
             </AppLayout>
         </>
