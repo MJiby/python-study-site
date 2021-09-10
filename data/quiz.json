@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "chapter": 1,
+        "problem": "~인 것을  고르시오~ ",
+        "selection_list": [
+            {
+                "selection_id": 0,
+                "selection_content": "AAA"
+            },
+            {
+                "selection_id": 1,
+                "selection_content": "BBB"
+            },
+            {
+                "selection_id": 2,
+                "selection_content": "CCC"
+            },
+            {
+                "selection_id": 3,
+                "selection_content": "DDD"
+            }
+        ]
+
+    }
+]
