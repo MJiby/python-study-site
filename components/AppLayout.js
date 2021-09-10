@@ -12,7 +12,7 @@ const AppLayout = ({children}) => {
         <Layout style={{height: '100%'}}>
             <GlobalStyle />
             <Header 
-                style={{background: 'white'}}
+                style={{background: 'white', }}
                 >
                 <Menu 
                     mode="horizontal"

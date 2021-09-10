@@ -22,8 +22,8 @@ export default function Home() {
             <AppLayout>
                 <Row>
                     <Col xs={24}>
-                        <div style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '45px',
-                        fontFamily: "'Roboto Mono', monospace;", "marginTop": "40px"
+                        <div style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '55px',
+                        fontFamily: "'Jua', sans-serif;", "marginTop": "40px"
                     }}>
                             STUDY LIST
                         </div>

@@ -1,12 +1,18 @@
 import {Row, Col} from 'antd'
+import {useRouter} from 'next/router'
 
-import AppLayout from "../components/AppLayout"
+import AppLayout from "../../components/AppLayout"
 
 
-const Lecture = () => {
+const Lectures = () => {
+    const router = useRouter()
+    const {id: lectureId} = router.query
 
     return (
         <AppLayout>
+            <div>
+                {lectureId}
+            </div>
             <Row>
                 <Col xs={24}>
                     <div style={{width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '30px'}}>
@@ -28,4 +34,4 @@ const Lecture = () => {
     )
 }
 
-export default Lecture
+export default Lectures
